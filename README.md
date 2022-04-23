@@ -12,7 +12,7 @@
 
 #### libs
 
-```json
+```js
 {
   "extends": "@xn-sakina/mental/lib",
   "compilerOptions": {
@@ -25,7 +25,7 @@
 
 #### react project
 
-```json
+```js
 {
   "extends": "@xn-sakina/mental/react",
   "include": ["src"]
@@ -34,7 +34,7 @@
 
 ### Optimizations
 
-```json
+```js
 {
   "compilerOptions": {
     // upgrade output syntax target
