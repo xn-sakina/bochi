@@ -1,0 +1,16 @@
+{
+  "name": "lib-react",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.26",
+    "@xn-sakina/mental": "workspace:*",
+    "react": "^18.2.0"
+  }
+}

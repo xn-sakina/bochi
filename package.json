@@ -1,6 +1,6 @@
 {
   "name": "@xn-sakina/mental",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "tsconfig.json base configs",
   "keywords": [
     "tsconfig",
@@ -16,11 +16,20 @@
   "author": "fz6m",
   "files": [
     "lib.json",
+    "lib-esm.json",
+    "lib-react.json",
     "react.json"
   ],
   "exports": {
+    "./package.json": "./package.json",
     "./lib": {
       "default": "./lib.json"
+    },
+    "./lib-esm": {
+      "default": "./lib-esm.json"
+    },
+    "./lib-react": {
+      "default": "./lib-react.json"
     },
     "./react": {
       "default": "./react.json"
@@ -31,11 +40,14 @@
     "push": "npm publish --registry=https://registry.npmjs.com/"
   },
   "devDependencies": {
+    "@types/node": "^18.11.16",
     "commit-verify": "^1.0.3",
-    "husky": "^7.0.4"
+    "husky": "^8.0.2",
+    "typescript": "^4.9.4"
   },
   "publishConfig": {
     "access": "public"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "packageManager": "pnpm@7.18.1"
 }

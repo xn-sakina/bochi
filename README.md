@@ -2,15 +2,17 @@
 
 `tsconfig.json` base configs
 
-### Install
+## Install
 
 ```bash
-  pnpm add @xn-sakina/mental
+  pnpm add -D @xn-sakina/mental
 ```
 
-### Usage
+## Usage
 
-#### libs
+### Library
+
+#### Commonjs Library
 
 ```js
 {
@@ -23,7 +25,35 @@
 }
 ```
 
-#### react project
+#### Native ESM Library
+
+```js
+{
+  "extends": "@xn-sakina/mental/lib-esm",
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist"
+  },
+  "include": ["src"]
+}
+```
+
+#### React Components Library
+
+```js
+{
+  "extends": "@xn-sakina/mental/lib-react",
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist"
+  },
+  "include": ["src"]
+}
+```
+
+### Project
+
+#### React Project
 
 ```js
 {
@@ -32,15 +62,13 @@
 }
 ```
 
-### Optimizations
+## Optimizations
 
 ```js
 {
   "compilerOptions": {
     // upgrade output syntax target
     "target": "es6",
-    // keep empty exports file
-    "isolatedModules": false,
     // generate declaration source map
     "declarationMap": true
     // ...
@@ -48,6 +76,6 @@
 }
 ```
 
-### License
+## License
 
 MIT
