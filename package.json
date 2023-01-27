@@ -1,6 +1,6 @@
 {
   "name": "@xn-sakina/mental",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "tsconfig.json base configs",
   "keywords": [
     "tsconfig",
@@ -18,6 +18,7 @@
     "lib.json",
     "lib-esm.json",
     "lib-react.json",
+    "lib-modern.json",
     "react.json"
   ],
   "exports": {
