@@ -51,6 +51,19 @@
 }
 ```
 
+#### Use Modern Bundler Library (esbuild/swc)
+
+```js
+{
+  "extends": "@xn-sakina/mental/lib-modern",
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist"
+  },
+  "include": ["src"]
+}
+```
+
 ### Project
 
 #### React Project

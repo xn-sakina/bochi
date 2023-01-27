@@ -1,6 +1,6 @@
 {
   "name": "@xn-sakina/mental",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "tsconfig.json base configs",
   "keywords": [
     "tsconfig",
@@ -31,6 +31,9 @@
     "./lib-react": {
       "default": "./lib-react.json"
     },
+    "./lib-modern": {
+      "default": "./lib-modern.json"
+    },
     "./react": {
       "default": "./react.json"
     }
@@ -40,14 +43,14 @@
     "push": "npm publish --registry=https://registry.npmjs.com/"
   },
   "devDependencies": {
-    "@types/node": "^18.11.16",
+    "@types/node": "^18.11.18",
     "commit-verify": "^1.0.3",
-    "husky": "^8.0.2",
-    "typescript": "^4.9.4"
+    "husky": "^8.0.3",
+    "typescript": "5.0.0-beta"
   },
   "publishConfig": {
     "access": "public"
   },
   "license": "MIT",
-  "packageManager": "pnpm@7.18.1"
+  "packageManager": "pnpm@7.24.2"
 }

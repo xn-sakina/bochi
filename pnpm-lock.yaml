@@ -4,15 +4,15 @@ importers:
 
   .:
     specifiers:
-      '@types/node': ^18.11.16
+      '@types/node': ^18.11.18
       commit-verify: ^1.0.3
-      husky: ^8.0.2
-      typescript: ^4.9.4
+      husky: ^8.0.3
+      typescript: 5.0.0-beta
     devDependencies:
-      '@types/node': registry.npmjs.org/@types/node/18.11.16
+      '@types/node': registry.npmjs.org/@types/node/18.11.18
       commit-verify: 1.0.3
-      husky: registry.npmjs.org/husky/8.0.2
-      typescript: registry.npmjs.org/typescript/4.9.4
+      husky: registry.npmjs.org/husky/8.0.3
+      typescript: registry.npmjs.org/typescript/5.0.0-beta
 
   examples/lib:
     specifiers:
@@ -343,10 +343,10 @@ packages:
       yargs-parser: 21.0.1
     dev: true
 
-  registry.npmjs.org/@types/node/18.11.16:
-    resolution: {integrity: sha512-6T7P5bDkRhqRxrQtwj7vru+bWTpelgtcETAZEUSdq0YISKz8WKdoBukQLYQQ6DFHvU9JRsbFq0JH5C51X2ZdnA==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@types/node/-/node-18.11.16.tgz}
+  registry.npmjs.org/@types/node/18.11.18:
+    resolution: {integrity: sha512-DHQpWGjyQKSHj3ebjFI/wRKcqQcdR+MoFBygntYOZytCqNfkd2ZC4ARDJ2DQqhjH5p85Nnd3jhUJIXrszFX/JA==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@types/node/-/node-18.11.18.tgz}
     name: '@types/node'
-    version: 18.11.16
+    version: 18.11.18
     dev: true
 
   registry.npmjs.org/@types/prop-types/15.7.5:
@@ -384,10 +384,10 @@ packages:
     version: 3.1.1
     dev: true
 
-  registry.npmjs.org/husky/8.0.2:
-    resolution: {integrity: sha512-Tkv80jtvbnkK3mYWxPZePGFpQ/tT3HNSs/sasF9P2YfkMezDl3ON37YN6jUUI4eTg5LcyVynlb6r4eyvOmspvg==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/husky/-/husky-8.0.2.tgz}
+  registry.npmjs.org/husky/8.0.3:
+    resolution: {integrity: sha512-+dQSyqPh4x1hlO1swXBiNb2HzTDN1I2IGLQx1GrBuiqFJfoMrnZWwVmatvSiO+Iz8fBUnf+lekwNo4c2LlXItg==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/husky/-/husky-8.0.3.tgz}
     name: husky
-    version: 8.0.2
+    version: 8.0.3
     engines: {node: '>=14'}
     hasBin: true
     dev: true
@@ -416,10 +416,10 @@ packages:
       loose-envify: registry.npmjs.org/loose-envify/1.4.0
     dev: true
 
-  registry.npmjs.org/typescript/4.9.4:
-    resolution: {integrity: sha512-Uz+dTXYzxXXbsFpM86Wh3dKCxrQqUcVMxwU54orwlJjOpO3ao8L7j5lH+dWfTwgCwIuM9GQ2kvVotzYJMXTBZg==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/typescript/-/typescript-4.9.4.tgz}
+  registry.npmjs.org/typescript/5.0.0-beta:
+    resolution: {integrity: sha512-+SSabbSXG5mtF+QGdV9uXXt9Saq1cSyI6hSG7znhaLoquleJpnmfkwSxFngK9c2fWWi1W/263TuzXQOsIcdjjA==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/typescript/-/typescript-5.0.0-beta.tgz}
     name: typescript
-    version: 4.9.4
+    version: 5.0.0-beta
     engines: {node: '>=4.2.0'}
     hasBin: true
     dev: true
