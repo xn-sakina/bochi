@@ -1,0 +1,12 @@
+{
+  "name": "lib-modern",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@xn-sakina/mental": "workspace:*",
+    "zx": "6.0.7"
+  }
+}
