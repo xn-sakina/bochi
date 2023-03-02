@@ -5,4 +5,4 @@ export default function Page() {
   return <div>{a}</div>;
 }
 
-export const b = 1;
+export const b = 2;
