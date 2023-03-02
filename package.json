@@ -1,6 +1,6 @@
 {
   "name": "@xn-sakina/mental",
-  "version": "3.1.0",
+  "version": "4.0.0",
   "description": "tsconfig.json base configs",
   "keywords": [
     "tsconfig",
@@ -16,27 +16,27 @@
   "author": "fz6m",
   "files": [
     "lib.json",
-    "lib-esm.json",
     "lib-react.json",
-    "lib-modern.json",
-    "react.json"
+    "lib-native-esm.json",
+    "project.json",
+    "project-legacy.json"
   ],
   "exports": {
     "./package.json": "./package.json",
     "./lib": {
       "default": "./lib.json"
     },
-    "./lib-esm": {
-      "default": "./lib-esm.json"
+    "./lib-native-esm": {
+      "default": "./lib-native-esm.json"
     },
     "./lib-react": {
       "default": "./lib-react.json"
     },
-    "./lib-modern": {
-      "default": "./lib-modern.json"
+    "./project": {
+      "default": "./project.json"
     },
-    "./react": {
-      "default": "./react.json"
+    "./project-legacy": {
+      "default": "./project-legacy.json"
     }
   },
   "scripts": {
@@ -44,10 +44,10 @@
     "push": "npm publish --registry=https://registry.npmjs.com/"
   },
   "devDependencies": {
-    "@types/node": "^18.11.18",
+    "@types/node": "^18.14.4",
     "commit-verify": "^1.0.3",
     "husky": "^8.0.3",
-    "typescript": "5.0.0-beta"
+    "typescript": "5.0.1-rc"
   },
   "publishConfig": {
     "access": "public"
