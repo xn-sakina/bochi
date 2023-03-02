@@ -27,9 +27,11 @@
 
 #### Native ESM Library
 
+> Required: `package.json` > `"type": "module"`
+
 ```js
 {
-  "extends": "@xn-sakina/mental/lib-esm",
+  "extends": "@xn-sakina/mental/lib-native-esm",
   "compilerOptions": {
     "rootDir": "./src",
     "outDir": "./dist"
@@ -51,29 +53,22 @@
 }
 ```
 
-#### Use Modern Bundler Library (esbuild/swc)
-
-```js
-{
-  "extends": "@xn-sakina/mental/lib-modern",
-  "compilerOptions": {
-    "rootDir": "./src",
-    "outDir": "./dist"
-  },
-  "include": ["src"]
-}
-```
-
 ### Project
 
 #### React Project
 
+> Required: typescript >= 5
+
 ```js
 {
-  "extends": "@xn-sakina/mental/react",
+  "extends": "@xn-sakina/mental/project",
   "include": ["src"]
 }
 ```
+
+> **Note**
+> 
+> v3 please use (typescript < 5) : `@xn-sakina/mental/project-legacy`
 
 ## Optimizations
 
