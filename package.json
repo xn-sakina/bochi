@@ -1,6 +1,6 @@
 {
   "name": "@xn-sakina/mental",
-  "version": "4.0.2",
+  "version": "4.1.0",
   "description": "tsconfig.json base configs",
   "keywords": [
     "tsconfig",
@@ -19,7 +19,8 @@
     "lib-react.json",
     "lib-native-esm.json",
     "project.json",
-    "project-legacy.json"
+    "project-legacy.json",
+    "prettier.js"
   ],
   "exports": {
     "./package.json": "./package.json",
@@ -37,6 +38,9 @@
     },
     "./project-legacy": {
       "default": "./project-legacy.json"
+    },
+    "./prettier": {
+      "default": "./prettier.js"
     }
   },
   "scripts": {
@@ -44,14 +48,15 @@
     "push": "npm publish --registry=https://registry.npmjs.com/"
   },
   "devDependencies": {
-    "@types/node": "^18.14.4",
-    "commit-verify": "^1.0.3",
+    "@types/node": "^18.18.9",
+    "commit-verify": "^1.1.0",
     "husky": "^8.0.3",
-    "typescript": "5.0.1-rc"
+    "prettier": "^3.1.0",
+    "typescript": "5.2.2"
   },
   "publishConfig": {
     "access": "public"
   },
   "license": "MIT",
-  "packageManager": "pnpm@7.24.2"
+  "packageManager": "pnpm@8.10.0"
 }

@@ -1,0 +1,12 @@
+{
+  "name": "prettier-example",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "format": "prettier . --write",
+    "test": "prettier ./src"
+  },
+  "devDependencies": {
+    "@xn-sakina/mental": "workspace:*"
+  }
+}
