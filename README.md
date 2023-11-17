@@ -1,6 +1,6 @@
 # @xn-sakina/mental
 
-`tsconfig.json` base configs
+`tsconfig.json` and `prettier` base configs
 
 ## Install
 
@@ -82,6 +82,13 @@
     // ...
   }
 }
+```
+
+## Prettier Usage
+
+```js
+// .prettierrc.js
+module.exports = require('@xn-sakina/mental/prettier')
 ```
 
 ## License
