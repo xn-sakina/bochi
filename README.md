@@ -1,6 +1,6 @@
 # @xn-sakina/mental
 
-`tsconfig.json` and `prettier` base configs
+`tsconfig.json` / `prettier` / `biome` base configs
 
 ## Install
 
@@ -8,7 +8,7 @@
   pnpm add -D @xn-sakina/mental
 ```
 
-## Usage
+## Tsconfig
 
 ### Library
 
@@ -70,7 +70,7 @@
 > 
 > v3 please use (typescript < 5) : `@xn-sakina/mental/project-legacy`
 
-## Optimizations
+### Optimizations
 
 ```js
 {
@@ -84,11 +84,20 @@
 }
 ```
 
-## Prettier Usage
+## Prettier
 
 ```js
 // .prettierrc.js
 module.exports = require('@xn-sakina/mental/prettier')
+```
+
+## Biome
+
+```js
+// biome.json
+{
+  "extends": ["./node_modules/@xn-sakina/mental/biome.json"]
+}
 ```
 
 ## License
