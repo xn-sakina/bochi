@@ -1,6 +1,6 @@
 {
   "name": "@xn-sakina/mental",
-  "version": "4.1.0",
+  "version": "4.2.0",
   "description": "tsconfig.json base configs",
   "keywords": [
     "tsconfig",
@@ -20,7 +20,8 @@
     "lib-native-esm.json",
     "project.json",
     "project-legacy.json",
-    "prettier.js"
+    "prettier.js",
+    "biome.json"
   ],
   "exports": {
     "./package.json": "./package.json",
