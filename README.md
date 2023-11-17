@@ -53,7 +53,7 @@
 }
 ```
 
-### Project
+### Website Project
 
 #### React Project
 
