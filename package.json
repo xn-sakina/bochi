@@ -41,6 +41,9 @@
     },
     "./prettier": {
       "default": "./prettier.js"
+    },
+    "./biome": {
+      "default": "./biome.json"
     }
   },
   "scripts": {
@@ -48,6 +51,7 @@
     "push": "npm publish --registry=https://registry.npmjs.com/"
   },
   "devDependencies": {
+    "@biomejs/biome": "^1.3.3",
     "@types/node": "^18.18.9",
     "commit-verify": "^1.1.0",
     "husky": "^8.0.3",
