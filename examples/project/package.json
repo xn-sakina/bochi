@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "@types/react": "^18.0.26",
-    "@xn-sakina/mental": "workspace:*",
+    "bochi": "workspace:*",
     "react": "^18.2.0"
   }
 }

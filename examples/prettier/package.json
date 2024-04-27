@@ -7,6 +7,6 @@
     "test": "prettier ./src"
   },
   "devDependencies": {
-    "@xn-sakina/mental": "workspace:*"
+    "bochi": "workspace:*"
   }
 }

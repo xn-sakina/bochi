@@ -1,5 +1,5 @@
 {
-  "extends": "@xn-sakina/mental/project",
+  "extends": "bochi/project",
   "include": ["src"],
   "compilerOptions": {
     "outDir": "dist",

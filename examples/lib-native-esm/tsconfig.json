@@ -1,5 +1,5 @@
 {
-  "extends": "@xn-sakina/mental/lib-native-esm",
+  "extends": "bochi/lib-native-esm",
   "include": ["src"],
   "compilerOptions": {
     "outDir": "dist",

@@ -7,6 +7,6 @@
     "format": "biome format . --write"
   },
   "devDependencies": {
-    "@xn-sakina/mental": "workspace:*"
+    "bochi": "workspace:*"
   }
 }

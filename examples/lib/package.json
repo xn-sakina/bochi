@@ -8,6 +8,6 @@
     "build": "tsc"
   },
   "devDependencies": {
-    "@xn-sakina/mental": "workspace:*"
+    "bochi": "workspace:*"
   }
 }

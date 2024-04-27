@@ -1,1 +1,1 @@
-module.exports = require('@xn-sakina/mental/prettier')
+module.exports = require('bochi/prettier')
