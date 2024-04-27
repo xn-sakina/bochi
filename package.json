@@ -1,6 +1,6 @@
 {
-  "name": "@xn-sakina/mental",
-  "version": "4.2.1",
+  "name": "bochi",
+  "version": "5.0.0",
   "description": "tsconfig.json base configs",
   "keywords": [
     "tsconfig",
@@ -8,10 +8,10 @@
     "tsconfig.json",
     "typescript-config"
   ],
-  "homepage": "https://github.com/xn-sakina/mental#README",
+  "homepage": "https://github.com/xn-sakina/bochi#README",
   "repository": {
     "type": "git",
-    "url": "https://github.com/xn-sakina/mental"
+    "url": "https://github.com/xn-sakina/bochi"
   },
   "author": "fz6m",
   "files": [
@@ -63,5 +63,5 @@
     "access": "public"
   },
   "license": "MIT",
-  "packageManager": "pnpm@8.10.0"
+  "packageManager": "pnpm@8.15.7"
 }
