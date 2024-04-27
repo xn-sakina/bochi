@@ -1,8 +1,3 @@
 {
-  "extends": "bochi/lib-native-esm",
-  "include": ["src"],
-  "compilerOptions": {
-    "outDir": "dist",
-    "rootDir": "src"
-  }
+  "extends": "bochi/lib-native-esm"
 }

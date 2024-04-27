@@ -1,8 +1,4 @@
 {
   "extends": "bochi/project",
   "include": ["src"],
-  "compilerOptions": {
-    "outDir": "dist",
-    "rootDir": "src"
-  }
 }
