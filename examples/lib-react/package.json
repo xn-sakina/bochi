@@ -1,8 +1,7 @@
 {
-  "name": "lib-react",
+  "name": "@example/lib-react",
   "private": true,
   "version": "1.0.0",
-  "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {

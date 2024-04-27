@@ -1,5 +1,5 @@
 {
-  "name": "lib-esm",
+  "name": "@example/lib-native-esm",
   "private": true,
   "version": "1.0.0",
   "type": "module",
