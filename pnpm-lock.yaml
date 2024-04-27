@@ -9,39 +9,39 @@ importers:
   .:
     devDependencies:
       '@biomejs/biome':
-        specifier: ^1.3.3
-        version: registry.npmjs.org/@biomejs/biome@1.3.3
+        specifier: ^1.7.1
+        version: 1.7.1
       '@types/node':
-        specifier: ^18.18.9
-        version: registry.npmjs.org/@types/node@18.18.9
+        specifier: ^18.19.31
+        version: 18.19.31
       commit-verify:
         specifier: ^1.1.0
         version: registry.npmjs.org/commit-verify@1.1.0
       husky:
-        specifier: ^8.0.3
-        version: registry.npmjs.org/husky@8.0.3
+        specifier: ^9.0.11
+        version: 9.0.11
       prettier:
-        specifier: ^3.1.0
-        version: registry.npmjs.org/prettier@3.1.0
+        specifier: ^3.2.5
+        version: 3.2.5
       typescript:
-        specifier: 5.2.2
-        version: registry.npmjs.org/typescript@5.2.2
+        specifier: 5.4.5
+        version: 5.4.5
 
   examples/biome:
     devDependencies:
-      '@xn-sakina/mental':
+      bochi:
         specifier: workspace:*
         version: link:../..
 
   examples/lib:
     devDependencies:
-      '@xn-sakina/mental':
+      bochi:
         specifier: workspace:*
         version: link:../..
 
   examples/lib-native-esm:
     devDependencies:
-      '@xn-sakina/mental':
+      bochi:
         specifier: workspace:*
         version: link:../..
       chalk:
@@ -53,7 +53,7 @@ importers:
       '@types/react':
         specifier: ^18.0.26
         version: registry.npmjs.org/@types/react@18.0.26
-      '@xn-sakina/mental':
+      bochi:
         specifier: workspace:*
         version: link:../..
       react:
@@ -62,7 +62,7 @@ importers:
 
   examples/prettier:
     devDependencies:
-      '@xn-sakina/mental':
+      bochi:
         specifier: workspace:*
         version: link:../..
 
@@ -71,7 +71,7 @@ importers:
       '@types/react':
         specifier: ^18.0.26
         version: registry.npmjs.org/@types/react@18.0.26
-      '@xn-sakina/mental':
+      bochi:
         specifier: workspace:*
         version: link:../..
       react:
@@ -79,6 +79,122 @@ importers:
         version: registry.npmjs.org/react@18.2.0
 
 packages:
+
+  /@biomejs/biome@1.7.1:
+    resolution: {integrity: sha512-wb2UNoFXcgaMdKXKT5ytsYntaogl2FSTjDt20CZynF3v7OXQUcIpTrr+be3XoOGpoZRj3Ytq9TSpmplUREXmeA==, tarball: https://registry.npmjs.org/@biomejs/biome/-/biome-1.7.1.tgz}
+    engines: {node: '>=14.21.3'}
+    hasBin: true
+    requiresBuild: true
+    optionalDependencies:
+      '@biomejs/cli-darwin-arm64': 1.7.1
+      '@biomejs/cli-darwin-x64': 1.7.1
+      '@biomejs/cli-linux-arm64': 1.7.1
+      '@biomejs/cli-linux-arm64-musl': 1.7.1
+      '@biomejs/cli-linux-x64': 1.7.1
+      '@biomejs/cli-linux-x64-musl': 1.7.1
+      '@biomejs/cli-win32-arm64': 1.7.1
+      '@biomejs/cli-win32-x64': 1.7.1
+    dev: true
+
+  /@biomejs/cli-darwin-arm64@1.7.1:
+    resolution: {integrity: sha512-qfLrIIB58dkgiY/1tgG6fSCBK22PZaSIf6blweZBsG6iMij05mEuJt50ne+zPnNFNUmt8t43NC/qOXT3iFHQBA==, tarball: https://registry.npmjs.org/@biomejs/cli-darwin-arm64/-/cli-darwin-arm64-1.7.1.tgz}
+    engines: {node: '>=14.21.3'}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@biomejs/cli-darwin-x64@1.7.1:
+    resolution: {integrity: sha512-OGeyNsEcp5VnKbF9/TBjPCTHNEOm7oHegEve07U3KZmzqfpw2Oe3i9DVW8t6vvj1TYbrwWYCld25H34kBDY7Vg==, tarball: https://registry.npmjs.org/@biomejs/cli-darwin-x64/-/cli-darwin-x64-1.7.1.tgz}
+    engines: {node: '>=14.21.3'}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@biomejs/cli-linux-arm64-musl@1.7.1:
+    resolution: {integrity: sha512-giH0/CzLOJ+wbxLxd5Shnr5xQf5fGnTRWLDe3lzjaF7IplVydNCEeZJtncB01SvyA6DAFJsvQ4LNxzAOQfEVCg==, tarball: https://registry.npmjs.org/@biomejs/cli-linux-arm64-musl/-/cli-linux-arm64-musl-1.7.1.tgz}
+    engines: {node: '>=14.21.3'}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@biomejs/cli-linux-arm64@1.7.1:
+    resolution: {integrity: sha512-MQDf5wErj1iBvlcxCyOa0XqZYN8WJrupVgbNnqhntO3yVATg8GxduVUn1fDSaolznkDRsj7Pz3Xu1esBFwvfmg==, tarball: https://registry.npmjs.org/@biomejs/cli-linux-arm64/-/cli-linux-arm64-1.7.1.tgz}
+    engines: {node: '>=14.21.3'}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@biomejs/cli-linux-x64-musl@1.7.1:
+    resolution: {integrity: sha512-ySNDtPhsLxU125IFHHAxfpoHBpkM56s4mEXeO70GZtgZay/o1h8IUPWCWf5Z7gKgc4jwgYN1U1U9xabI3hZVAg==, tarball: https://registry.npmjs.org/@biomejs/cli-linux-x64-musl/-/cli-linux-x64-musl-1.7.1.tgz}
+    engines: {node: '>=14.21.3'}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@biomejs/cli-linux-x64@1.7.1:
+    resolution: {integrity: sha512-3wmCsGcC3KZ4pfTknXHfyMMlXPMhgfXVAcG5GlrR+Tq2JGiAw0EUydaLpsSBEbcG7IxH6OiUZEJZ95kAycCHBA==, tarball: https://registry.npmjs.org/@biomejs/cli-linux-x64/-/cli-linux-x64-1.7.1.tgz}
+    engines: {node: '>=14.21.3'}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@biomejs/cli-win32-arm64@1.7.1:
+    resolution: {integrity: sha512-8hIDakEqZn0i6+388noYKdZ0ZrovTwnvMU/Qp/oJou0G7EPVdXupOe0oxiQSdRN0W7f6CS/yjPCYuVGzDG6r0g==, tarball: https://registry.npmjs.org/@biomejs/cli-win32-arm64/-/cli-win32-arm64-1.7.1.tgz}
+    engines: {node: '>=14.21.3'}
+    cpu: [arm64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@biomejs/cli-win32-x64@1.7.1:
+    resolution: {integrity: sha512-3W9k3uH6Ea6VOpAS9xkkAlS0LTfnGQjmIUCegZ8SDtK2NgJ1gO+qdEkGJb0ltahusFTN1QxJ107dM7ASA9IUEg==, tarball: https://registry.npmjs.org/@biomejs/cli-win32-x64/-/cli-win32-x64-1.7.1.tgz}
+    engines: {node: '>=14.21.3'}
+    cpu: [x64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@types/node@18.19.31:
+    resolution: {integrity: sha512-ArgCD39YpyyrtFKIqMDvjz79jto5fcI/SVUs2HwB+f0dAzq68yqOdyaSivLiLugSziTpNXLQrVb7RZFmdZzbhA==, tarball: https://registry.npmjs.org/@types/node/-/node-18.19.31.tgz}
+    dependencies:
+      undici-types: 5.26.5
+    dev: true
+
+  /husky@9.0.11:
+    resolution: {integrity: sha512-AB6lFlbwwyIqMdHYhwPe+kjOC3Oc5P3nThEoW/AaO2BX3vJDjWPFxYLxokUZOo6RNX20He3AaT8sESs9NJcmEw==, tarball: https://registry.npmjs.org/husky/-/husky-9.0.11.tgz}
+    engines: {node: '>=18'}
+    hasBin: true
+    dev: true
+
+  /prettier@3.2.5:
+    resolution: {integrity: sha512-3/GWa9aOC0YeD7LUfvOG2NiDyhOWRvt1k+rcKhOuYnMY24iiCphgneUfJDyFXd6rZCAnuLBv6UeAULtrhT/F4A==, tarball: https://registry.npmjs.org/prettier/-/prettier-3.2.5.tgz}
+    engines: {node: '>=14'}
+    hasBin: true
+    dev: true
+
+  /typescript@5.4.5:
+    resolution: {integrity: sha512-vcI4UpRgg81oIRUFwR0WSIHKt11nJ7SAVlYNIu+QpqeyXP+gpQJy/Z4+F0aGxSE4MqwjyXvW/TzgkLAx2AGHwQ==, tarball: https://registry.npmjs.org/typescript/-/typescript-5.4.5.tgz}
+    engines: {node: '>=14.17'}
+    hasBin: true
+    dev: true
+
+  /undici-types@5.26.5:
+    resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==, tarball: https://registry.npmjs.org/undici-types/-/undici-types-5.26.5.tgz}
+    dev: true
 
   registry.npmjs.org/@babel/code-frame@7.16.7:
     resolution: {integrity: sha512-iAXqUn8IIeBTNd72xsFlgaXHkMBMt6y4HJp1tIaK465CWLT/fG1aqB7ykr95gHHmlBdGbFeWWfyB4NJJ0nmeIg==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@babel/code-frame/-/code-frame-7.16.7.tgz}
@@ -105,96 +221,6 @@ packages:
       '@babel/helper-validator-identifier': registry.npmjs.org/@babel/helper-validator-identifier@7.16.7
       chalk: registry.npmjs.org/chalk@2.4.2
       js-tokens: registry.npmjs.org/js-tokens@4.0.0
-    dev: true
-
-  registry.npmjs.org/@biomejs/biome@1.3.3:
-    resolution: {integrity: sha512-vTJn7RBzLWIabUuUIoEopO860YyBrbPEu4Pztfd28jRU5QD074hKZ9IQs24pFO6A2R296gaeYmN62f4u7pUruQ==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@biomejs/biome/-/biome-1.3.3.tgz}
-    name: '@biomejs/biome'
-    version: 1.3.3
-    engines: {node: '>=14.*'}
-    hasBin: true
-    requiresBuild: true
-    optionalDependencies:
-      '@biomejs/cli-darwin-arm64': registry.npmjs.org/@biomejs/cli-darwin-arm64@1.3.3
-      '@biomejs/cli-darwin-x64': registry.npmjs.org/@biomejs/cli-darwin-x64@1.3.3
-      '@biomejs/cli-linux-arm64': registry.npmjs.org/@biomejs/cli-linux-arm64@1.3.3
-      '@biomejs/cli-linux-x64': registry.npmjs.org/@biomejs/cli-linux-x64@1.3.3
-      '@biomejs/cli-win32-arm64': registry.npmjs.org/@biomejs/cli-win32-arm64@1.3.3
-      '@biomejs/cli-win32-x64': registry.npmjs.org/@biomejs/cli-win32-x64@1.3.3
-    dev: true
-
-  registry.npmjs.org/@biomejs/cli-darwin-arm64@1.3.3:
-    resolution: {integrity: sha512-2X87ZfbmWwe4NGukrUvnoYdI//muSgjNUCAHJ2DO+kS1sB7kDy1s6PN/IYyTJuqRcJtDuOnSpaUDE7KxR1YhtA==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@biomejs/cli-darwin-arm64/-/cli-darwin-arm64-1.3.3.tgz}
-    name: '@biomejs/cli-darwin-arm64'
-    version: 1.3.3
-    engines: {node: '>=14.*'}
-    cpu: [arm64]
-    os: [darwin]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  registry.npmjs.org/@biomejs/cli-darwin-x64@1.3.3:
-    resolution: {integrity: sha512-t+7DWTCbSgHOBcPsGKuwS1qh1z9zbXFK8i8ktE18yW7iF/W0zI62k44fYqYeFJKlb0Q08aqUvez3L+AQJFsn+w==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@biomejs/cli-darwin-x64/-/cli-darwin-x64-1.3.3.tgz}
-    name: '@biomejs/cli-darwin-x64'
-    version: 1.3.3
-    engines: {node: '>=14.*'}
-    cpu: [x64]
-    os: [darwin]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  registry.npmjs.org/@biomejs/cli-linux-arm64@1.3.3:
-    resolution: {integrity: sha512-D8CvXaB8lkXXBQ6B3n0MXSSZFiE60+aNHorBLimVTtKiMod8QvAP425oQFZFul5wMXZqPLGTKFjXbAi/rvnc1A==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@biomejs/cli-linux-arm64/-/cli-linux-arm64-1.3.3.tgz}
-    name: '@biomejs/cli-linux-arm64'
-    version: 1.3.3
-    engines: {node: '>=14.*'}
-    cpu: [arm64]
-    os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  registry.npmjs.org/@biomejs/cli-linux-x64@1.3.3:
-    resolution: {integrity: sha512-bqB05fwJnRZwRlcm/BS/s4qPickqiXZkiU/nOYvHApfsPeqgSHgv5HWoBYuSUjgqBbX3XZJArsC5dCcVW7vAJw==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@biomejs/cli-linux-x64/-/cli-linux-x64-1.3.3.tgz}
-    name: '@biomejs/cli-linux-x64'
-    version: 1.3.3
-    engines: {node: '>=14.*'}
-    cpu: [x64]
-    os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  registry.npmjs.org/@biomejs/cli-win32-arm64@1.3.3:
-    resolution: {integrity: sha512-muFOjAv1ONMfaJDlo4Ds+Qb9lkdSLM2XaxOe3AJPejSq3Vi0aRr51ZnE02BofMnL2sVsOA9cO54wibsuTcopbw==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@biomejs/cli-win32-arm64/-/cli-win32-arm64-1.3.3.tgz}
-    name: '@biomejs/cli-win32-arm64'
-    version: 1.3.3
-    engines: {node: '>=14.*'}
-    cpu: [arm64]
-    os: [win32]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  registry.npmjs.org/@biomejs/cli-win32-x64@1.3.3:
-    resolution: {integrity: sha512-PMkMhS4smmmTMflxuZUx3REFSazEL9xsGscvZO1dKWI4ET23la+KxEM4TlSpjOyO66UerqSkuUlZecn0QhD63A==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@biomejs/cli-win32-x64/-/cli-win32-x64-1.3.3.tgz}
-    name: '@biomejs/cli-win32-x64'
-    version: 1.3.3
-    engines: {node: '>=14.*'}
-    cpu: [x64]
-    os: [win32]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  registry.npmjs.org/@types/node@18.18.9:
-    resolution: {integrity: sha512-0f5klcuImLnG4Qreu9hPj/rEfFq6YRc5n2mAjSsH+ec/mJL+3voBH0+8T7o8RpFjH7ovc+TRsL/c7OYIQsPTfQ==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@types/node/-/node-18.18.9.tgz}
-    name: '@types/node'
-    version: 18.18.9
-    dependencies:
-      undici-types: registry.npmjs.org/undici-types@5.26.5
     dev: true
 
   registry.npmjs.org/@types/parse-json@4.0.0:
@@ -413,14 +439,6 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  registry.npmjs.org/husky@8.0.3:
-    resolution: {integrity: sha512-+dQSyqPh4x1hlO1swXBiNb2HzTDN1I2IGLQx1GrBuiqFJfoMrnZWwVmatvSiO+Iz8fBUnf+lekwNo4c2LlXItg==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/husky/-/husky-8.0.3.tgz}
-    name: husky
-    version: 8.0.3
-    engines: {node: '>=14'}
-    hasBin: true
-    dev: true
-
   registry.npmjs.org/import-fresh@3.3.0:
     resolution: {integrity: sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/import-fresh/-/import-fresh-3.3.0.tgz}
     name: import-fresh
@@ -505,14 +523,6 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  registry.npmjs.org/prettier@3.1.0:
-    resolution: {integrity: sha512-TQLvXjq5IAibjh8EpBIkNKxO749UEWABoiIZehEPiY4GNpVdhaFKqSTu+QrlU6D2dPAfubRmtJTi4K4YkQ5eXw==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/prettier/-/prettier-3.1.0.tgz}
-    name: prettier
-    version: 3.1.0
-    engines: {node: '>=14'}
-    hasBin: true
-    dev: true
-
   registry.npmjs.org/react@18.2.0:
     resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/react/-/react-18.2.0.tgz}
     name: react
@@ -572,20 +582,6 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       has-flag: registry.npmjs.org/has-flag@4.0.0
-    dev: true
-
-  registry.npmjs.org/typescript@5.2.2:
-    resolution: {integrity: sha512-mI4WrpHsbCIcwT9cF4FZvr80QUeKvsUsUvKDoR+X/7XHQH98xYD8YHZg7ANtz2GtZt/CBq2QJ0thkGJMHfqc1w==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/typescript/-/typescript-5.2.2.tgz}
-    name: typescript
-    version: 5.2.2
-    engines: {node: '>=14.17'}
-    hasBin: true
-    dev: true
-
-  registry.npmjs.org/undici-types@5.26.5:
-    resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/undici-types/-/undici-types-5.26.5.tgz}
-    name: undici-types
-    version: 5.26.5
     dev: true
 
   registry.npmjs.org/v8-compile-cache@2.3.0:
