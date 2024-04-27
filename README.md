@@ -2,7 +2,7 @@
 
 `tsconfig.json` / `prettier` / `biome` base configs
 
-> Required: typescript >= `5.5 beta`
+> *Required: TypeScript >= `5.5 beta`*
 
 ## Install
 
@@ -52,7 +52,7 @@ Common config:
 
 #### React Project
 
-> Required: typescript >= `5`
+> *Required: TypeScript >= `5`*
 
 ```ts
 {
@@ -61,7 +61,7 @@ Common config:
 }
 ```
 
-### Optimizations
+### Advanced
 
 ```ts
 {
