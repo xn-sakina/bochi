@@ -1,27 +1,31 @@
-# @xn-sakina/mental
+# bochi
 
 `tsconfig.json` / `prettier` / `biome` base configs
+
+> Required: typescript >= `5.5 beta`
 
 ## Install
 
 ```bash
-  pnpm add -D @xn-sakina/mental
+  pnpm add -D bochi
 ```
 
-## Tsconfig
+## TSConfig
 
 ### Library
 
+Common config:
+
+ - Default source dir: `src`
+ - Default output dir: `dist`
+ - Default include: `src`
+
 #### Commonjs Library
 
-```js
+```ts
+// tsconfig.json
 {
-  "extends": "@xn-sakina/mental/lib",
-  "compilerOptions": {
-    "rootDir": "./src",
-    "outDir": "./dist"
-  },
-  "include": ["src"]
+  "extends": "bochi/lib"
 }
 ```
 
@@ -29,27 +33,18 @@
 
 > Required: `package.json` > `"type": "module"`
 
-```js
+```ts
+// tsconfig.json
 {
-  "extends": "@xn-sakina/mental/lib-native-esm",
-  "compilerOptions": {
-    "rootDir": "./src",
-    "outDir": "./dist"
-  },
-  "include": ["src"]
+  "extends": "bochi/lib-native-esm"
 }
 ```
 
 #### React Components Library
 
-```js
+```ts
 {
-  "extends": "@xn-sakina/mental/lib-react",
-  "compilerOptions": {
-    "rootDir": "./src",
-    "outDir": "./dist"
-  },
-  "include": ["src"]
+  "extends": "bochi/lib-react"
 }
 ```
 
@@ -57,22 +52,18 @@
 
 #### React Project
 
-> Required: typescript >= 5
+> Required: typescript >= `5`
 
-```js
+```ts
 {
-  "extends": "@xn-sakina/mental/project",
+  "extends": "bochi/project",
   "include": ["src"]
 }
 ```
 
-> **Note**
-> 
-> v3 please use (typescript < 5) : `@xn-sakina/mental/project-legacy`
-
 ### Optimizations
 
-```js
+```ts
 {
   "compilerOptions": {
     // upgrade output syntax target
@@ -86,19 +77,27 @@
 
 ## Prettier
 
-```js
+```ts
 // .prettierrc.js
-module.exports = require('@xn-sakina/mental/prettier')
+module.exports = require('bochi/prettier')
 ```
 
 ## Biome
 
-```js
+```ts
 // biome.json
 {
-  "extends": ["./node_modules/@xn-sakina/mental/biome.json"]
+  "extends": ["./node_modules/bochi/biome.json"]
 }
 ```
+
+## Package version
+
+Package Name|Version
+:-:|:-:
+`bochi`|[`v5.x`](https://github.com/xn-sakina/bochi)
+`@xn-sakina/mental`|[`v4.x`](https://github.com/xn-sakina/bochi/releases/tag/v4.2.1)
+`@xn-sakina/mental`|[`v3.x`](https://github.com/xn-sakina/bochi/releases/tag/v3.1.0)
 
 ## License
 
