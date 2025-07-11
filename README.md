@@ -1,6 +1,6 @@
 # bochi
 
-`tsconfig.json` / `prettier` / `biome` base configs
+`tsconfig.json` / `prettier` / `biome` / `dprint` base configs
 
 > *Required: TypeScript >= `5.5 beta`*
 
