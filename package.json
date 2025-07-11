@@ -59,5 +59,8 @@
     "access": "public"
   },
   "license": "MIT",
-  "packageManager": "pnpm@9.7.1"
+  "packageManager": "pnpm@10.13.1",
+  "pnpm": {
+    "neverBuiltDependencies": []
+  }
 }
