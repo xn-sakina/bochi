@@ -1,6 +1,6 @@
 {
   "name": "bochi",
-  "version": "5.1.0",
+  "version": "5.2.0",
   "description": "tsconfig.json base configs",
   "keywords": [
     "tsconfig",
@@ -20,7 +20,8 @@
     "lib-native-esm.json",
     "project.json",
     "prettier.js",
-    "biome.json"
+    "biome.json",
+    "dprint.json"
   ],
   "exports": {
     "./package.json": "./package.json",
