@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "test": "biome format .",
+    "check": "biome format .",
     "format": "biome format . --write"
   },
   "devDependencies": {

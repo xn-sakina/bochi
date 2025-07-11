@@ -91,6 +91,15 @@ module.exports = require('bochi/prettier')
 }
 ```
 
+## Dprint
+
+```ts
+// dprint.json
+{
+  "extends": "./node_modules/bochi/dprint.json"
+}
+```
+
 ## Package version
 
 Package Name|Version

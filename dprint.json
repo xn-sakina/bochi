@@ -1,0 +1,34 @@
+{
+  "lineWidth": 80,
+  "useTabs": true,
+  "indentWidth": 2,
+  "typescript": {
+    "semiColons": "asi",
+    "quoteStyle": "preferSingle",
+    "indentWidth": 2,
+    "useTabs": false,
+    "lineWidth": 80
+  },
+  "json": {
+    "indentWidth": 2,
+    "useTabs": false,
+    "lineWidth": 80
+  },
+  "excludes": [
+    "**/*-lock.json",
+    "**/*-lock.yaml",
+    "**/node_modules/**",
+    "**/dist/**",
+    "**/build/**",
+    "**/compiled/**",
+    "**/test/**",
+    "**/tests/**",
+    "**/coverage/**",
+    "**/fixtures/**",
+    "**/__fixtures__/**"
+  ],
+  "plugins": [
+    "https://plugins.dprint.dev/typescript-0.95.8.wasm",
+    "https://plugins.dprint.dev/json-0.20.0.wasm"
+  ]
+}
