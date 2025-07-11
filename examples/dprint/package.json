@@ -1,0 +1,12 @@
+{
+  "name": "@example/dprint",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "check": "dprint check",
+    "format": "dprint fmt"
+  },
+  "devDependencies": {
+    "bochi": "workspace:*"
+  }
+}
