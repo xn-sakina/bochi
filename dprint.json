@@ -1,6 +1,6 @@
 {
   "lineWidth": 80,
-  "useTabs": true,
+  "useTabs": false,
   "indentWidth": 2,
   "typescript": {
     "semiColons": "asi",
